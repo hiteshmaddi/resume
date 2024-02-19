@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashritha Moturi- Personal Website</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #a16fad;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+        }
+        footer {
+            background-color :#a16fad;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 5px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Hitesh Maddi</h1>
+        <p>Student</p>
+        <nav>
+            <a href="#" onclick="toggleSection('about')">About</a>
+            <a href="#" onclick="toggleSection('portfolio')">Portfolio</a>
+            <a href="#" onclick="toggleSection('contact')">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am a motivated and passionate computer science student with a passion for technology and problem-solving. Throughout my academic journey, I have developed a strong foundation in programming languages such as C,C++, Python and JavaScript.
+        </p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h2>Portfolio</h2>
+        <ul>
+            <li> <b>Project-1</b><br>CGPA CALCULATOR | C++, Object-Oriented Programming<br>Input Gathering: Design a user interface where users can input their course grades
+                and corresponding credit hours.
+                Calculation Logic: Implement the backend logic to convert letter grades to grade
+                points, calculate weighted averages, and compute the CGPA.
+                Result Display: Present the calculated CGPA to the user, ensuring clarity and
+                accuracy in the presentation of academic performance.</li>
+            <li><b>Project 2</b><br>Employee Management System | Using Doubly Linked List<br>Employee Data Structure: Define a struct to represent employee information, including attributes such as
+                employee ID, name, position, salary, etc.
+                Doubly Linked List Implementation: Create functions to perform operations on the doubly linked list,
+                including insertion, deletion, searching, and updating employee records.
+                User Interface: Develop a user interface to interact with the employee management system, allowing users
+                to add, remove, search for, and modify employee records, providing a seamless experience for managing
+                employee data.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>You can reach me via email at <a href="hiteshsai_maddi@srmap.eu.in"> hiteshsai_maddi@srmap.edu.in</a>.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Hitesh Maddi</p>
+    </div>
+</footer>
+
+<script>
+    function toggleSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section.style.display === 'none' || section.style.display === '') {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
